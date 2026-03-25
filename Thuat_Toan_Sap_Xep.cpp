@@ -1,4 +1,4 @@
-// 2.1 Selection Sort (Chon truc tiep) - O(N^2)
+// 1 Selection Sort (Chon truc tiep) - O(N^2)
 void SelectionSort(int a[], int n) {
     int vt;
     for (int i = 0; i < n - 1; i++) {
@@ -9,7 +9,7 @@ void SelectionSort(int a[], int n) {
     }
 }
 
-// 2.2 Insertion Sort (Chen truc tiep) - O(N^2)
+// 2 Insertion Sort (Chen truc tiep) - O(N^2)
 void InsertionSort(int a[], int n) {
     int pos, x;
     for (int i = 1; i < n; i++) {
@@ -23,7 +23,7 @@ void InsertionSort(int a[], int n) {
     }
 }
 
-// 2.3 Bubble Sort (Noi bot) - O(N^2)
+// 3 Bubble Sort (Noi bot) - O(N^2)
 void BubbleSort(int a[], int n) {
     for (int i = 0; i < n - 1; i++)
         for (int j = n - 1; j > i; j--)
@@ -31,7 +31,7 @@ void BubbleSort(int a[], int n) {
                 HoanVi(a[j], a[j - 1]);
 }
 
-// 2.4 Quick Sort (Sap xep nhanh) - O(N log N) trung binh
+// 4 Quick Sort (Sap xep nhanh) - O(N log N) trung binh
 void QuickSort(int a[], int l, int r) {
     int i = l, j = r, x;
     x = a[(l + r) / 2];
@@ -47,7 +47,7 @@ void QuickSort(int a[], int l, int r) {
     if (i < r) QuickSort(a, i, r);
 }
 
-// 2.5 Heap Sort (Vun dong) - O(N log N)
+// 5 Heap Sort (Vun dong) - O(N log N)
 void Shift(int a[], int l, int r) {
     int x, i, j;
     i = l; j = 2 * i + 1;
